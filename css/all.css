@@ -53,7 +53,7 @@ table {
 }
 
 * {
-  outline: 1px solid rgba(0, 0, 0, 0.3137254902);
+  outline: 1px solid rgba(0, 0, 0, 0.062745098);
 }
 
 *,
@@ -63,41 +63,80 @@ table {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   line-height: 1.5;
 }
 
 .wrap {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
 .header {
+  max-width: 1296px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  margin: 0px 200px;
+  justify-content: center;
+  position: relative;
 }
-.header img {
-  margin-right: 300px;
+.header .logo {
+  position: absolute;
+  top: 25px;
+  left: 0%;
+}
+.header .logo img {
+  display: block;
 }
 .header .menu {
   display: flex;
   align-items: center;
-  margin: 32px 32px;
+  max-width: 480px;
+  margin: 32px 0px;
 }
 .header .menu a {
-  padding: 4px 8px;
-  margin: 0px 30px;
+  display: block;
   text-decoration: none;
   color: #000;
+  margin: 0px 20px;
+  padding: 4px 4px;
 }
 .header .menu a:hover {
   font-weight: 900;
-  position: relative;
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: #FAFAFA;
+  padding: 80px 0px;
+}
+.title img {
+  display: block;
+}
+.title .title_top {
+  margin: 0 auto;
+  max-width: 670px;
+  position: relative;
+}
+.title .title_top .quote-left {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+.title .title_top h2 {
+  padding: 70px 0px;
+  max-width: 548px;
+  margin-left: 70px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.title .title_top h2 .vector {
+  background-image: url(/images/mark.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-right: 20px;
+}
+.title .title_top .quote-right {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
 }/*# sourceMappingURL=all.css.map */
