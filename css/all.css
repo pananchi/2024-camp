@@ -94,4 +94,10 @@ body {
 .header .menu a:hover {
   font-weight: 900;
   position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=all.css.map */
