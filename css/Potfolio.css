@@ -126,7 +126,7 @@ body {
   text-align: center;
 }
 .title .title_top h2 .vector {
-  background-image: url(images/mark.png);
+  background-image: url(/images/mark.png);
   background-repeat: no-repeat;
   background-position: bottom;
   padding-right: 20px;
@@ -268,6 +268,7 @@ body {
 }
 .footer .community img {
   vertical-align: middle;
+  width: 56px;
   margin-right: 20px;
 }
 .footer .community li {
@@ -276,20 +277,17 @@ body {
 .footer .community a {
   display: block;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
   color: #3B3B3B;
   border: 1px solid #C1C1C1;
   padding: 8px 24px;
   border-radius: 8px;
 }
-.footer .community .community_info {
+.footer .community a:hover {
   background: #000;
-  border-radius: 8px;
-}
-.footer .community .community_info a {
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
   color: #FFF;
+}
+.footer .community a:hover img {
+  filter: brightness(100);
 }/*# sourceMappingURL=Potfolio.css.map */

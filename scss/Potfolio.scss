@@ -123,7 +123,7 @@ body {
             font-weight: 400;
             text-align: center;
             .vector{
-                background-image: url(images/mark.png);
+                background-image: url(/images/mark.png);
                 background-repeat: no-repeat;
                 background-position: bottom;
                 padding-right: 20px;
@@ -273,6 +273,7 @@ body {
     .community{
         img{
             vertical-align: middle;
+            width: 56px;
             margin-right: 20px;
         }
         li{
@@ -281,23 +282,21 @@ body {
         a{
             display: block;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 700;
             text-decoration: none;
             color: #3B3B3B;
             border: 1px solid #C1C1C1;
             padding: 8px 24px;
             border-radius: 8px;
-        }
-        .community_info{
-            background: #000;
-            border-radius: 8px;
-            a{
-            font-size: 20px;
-            font-weight: 700;
-            text-decoration: none;
-            color: #FFF;
+            &:hover{
+                background: #000;
+                color: #FFF;
+                img{
+                    filter: brightness(100);
+                }
             }
-            
         }
     }
+            
 }
+    
