@@ -1,55 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import "cssreset";
+@import "header";
+@import "footer";
 
 // *{
-//     outline: 1px solid #00000005;
-//   }
+//      outline: 1px solid #00000005;
+// }
 
 *,
 *::before,
@@ -65,39 +20,6 @@ body {
 .wrap{
     max-width: 100%;
     margin: 0 auto;
-}
-
-.header{
-    max-width: 1296px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    .logo{
-        position: absolute;
-        top: 25px;
-        left: 0%;
-        img{
-            display: block;
-        }
-    }
-
-    .menu{
-        display: flex;
-        align-items: center;
-        max-width: 480px;
-        margin: 32px 0px;
-        a{
-            display: block;
-            text-decoration: none;
-            color: #000;
-            margin: 0px 20px;
-            padding: 4px 4px;
-            &:hover{
-                font-weight: 900;
-            }
-        }
-    }
 }
 
 .title{
@@ -117,7 +39,6 @@ body {
         }
         h2{
             padding: 70px 0px;
-            max-width: 548px;
             margin-left: 70px;
             font-size: 24px;
             font-weight: 400;
@@ -158,16 +79,16 @@ body {
         .link{
             margin-top: 4px;
             margin-bottom: 8px;
-            border: 2px solid #C1C1C1;
+            border: 1px solid #C1C1C1;
             width: 24px;
         }
         p{
             font-weight: 400;
             text-align: center;
-            
         }
     }
 }
+
 
 .container{
     max-width: 1296px;
@@ -226,7 +147,7 @@ body {
         a{
             font-size: 24px;
             font-weight: 400;
-            padding: 6px 13px;
+            padding: 1px 13px 5px 13px;
             border-radius: 4px;
             text-decoration: none;
             color: #000;
@@ -238,67 +159,49 @@ body {
     }
 }
 
-.footer{
-    background-image: url("../images/footer-bg-lg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 424px;
-    .footer_content{
-        max-width: 1296px;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center
-    }
-    .content{
-        img{
-            display: block;
-            width: 120px;
-        }
-        p{
-            font-size: 20px;
-            font-weight: 400;
-            color: #3B3B3B;
-            padding: 24px 0px;
-        }
-        .mail{
-            font-size: 20px;
-            font-weight: 400;
-            color: #919191;
-            text-decoration: none;
-        }
-        
-    }
-    .community{
-        img{
-            vertical-align: middle;
-            width: 56px;
-            margin-right: 20px;
-        }
-        li{
-            margin: 24px 0px;
-        }
-        a{
-            display: block;
-            font-size: 20px;
-            font-weight: 700;
-            text-decoration: none;
-            color: #3B3B3B;
-            border: 1px solid #C1C1C1;
-            background: #FFF;
-            padding: 8px 24px;
-            border-radius: 8px;
-            &:hover{
-                background: #000;
-                color: #FFF;
-                img{
-                    filter: brightness(100);
-                }
+@media(max-width: 375px){
+    .title{
+        padding: 40px 24px 80px 24px ;
+        .title_top{
+            max-width: 300px;
+            height: 192px;
+            .quote-left{
+                left: 35%;
+            }
+            h2{
+                font-size: 20px;
+                margin-left: 0px;
+            }
+            .quote-right{
+                display: none;
             }
         }
+    }   
+    .title_bottom{
+        max-width: 235px;
+        ul{
+            flex-direction: column;
+            gap: 20px;
+        }
     }
-            
+    .container{
+        max-width: 351px;
+        margin-top: 60px;
+        .work{
+            .space{
+                margin-top: 20px;
+            }
+            .work-info{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .work-tags{
+                gap: 8px;
+            }
+        }
+        .paginator{
+            margin-top: 50px;
+        }
+    }
 }
-    

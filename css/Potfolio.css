@@ -52,22 +52,6 @@ table {
   border-spacing: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-}
-
-.wrap {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .header {
   max-width: 1296px;
   margin: 0 auto;
@@ -100,6 +84,80 @@ body {
   font-weight: 900;
 }
 
+.footer {
+  background-image: url("../images/footer-bg-lg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 424px;
+}
+.footer .footer_content {
+  max-width: 1296px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .content img {
+  display: block;
+  width: 120px;
+}
+.footer .content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #3B3B3B;
+  padding: 24px 0px;
+}
+.footer .content .mail {
+  font-size: 20px;
+  font-weight: 400;
+  color: #919191;
+  text-decoration: none;
+}
+.footer .community img {
+  vertical-align: middle;
+  width: 56px;
+  margin-right: 20px;
+}
+.footer .community li {
+  margin: 24px 0px;
+}
+.footer .community a {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #3B3B3B;
+  border: 1px solid #C1C1C1;
+  background: #FFF;
+  padding: 8px 24px;
+  border-radius: 8px;
+}
+.footer .community a:hover {
+  background: #000;
+  color: #FFF;
+}
+.footer .community a:hover img {
+  filter: brightness(100);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .title {
   background: #FAFAFA;
   padding: 80px 0px;
@@ -119,7 +177,6 @@ body {
 }
 .title .title_top h2 {
   padding: 70px 0px;
-  max-width: 548px;
   margin-left: 70px;
   font-size: 24px;
   font-weight: 400;
@@ -159,7 +216,7 @@ body {
 .title .title_bottom .link {
   margin-top: 4px;
   margin-bottom: 8px;
-  border: 2px solid #C1C1C1;
+  border: 1px solid #C1C1C1;
   width: 24px;
 }
 .title .title_bottom p {
@@ -226,7 +283,7 @@ body {
 .container .paginator a {
   font-size: 24px;
   font-weight: 400;
-  padding: 6px 13px;
+  padding: 1px 13px 5px 13px;
   border-radius: 4px;
   text-decoration: none;
   color: #000;
@@ -236,60 +293,45 @@ body {
   color: #FFF;
 }
 
-.footer {
-  background-image: url("../images/footer-bg-lg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 424px;
-}
-.footer .footer_content {
-  max-width: 1296px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer .content img {
-  display: block;
-  width: 120px;
-}
-.footer .content p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #3B3B3B;
-  padding: 24px 0px;
-}
-.footer .content .mail {
-  font-size: 20px;
-  font-weight: 400;
-  color: #919191;
-  text-decoration: none;
-}
-.footer .community img {
-  vertical-align: middle;
-  width: 56px;
-  margin-right: 20px;
-}
-.footer .community li {
-  margin: 24px 0px;
-}
-.footer .community a {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #3B3B3B;
-  border: 1px solid #C1C1C1;
-  background: #FFF;
-  padding: 8px 24px;
-  border-radius: 8px;
-}
-.footer .community a:hover {
-  background: #000;
-  color: #FFF;
-}
-.footer .community a:hover img {
-  filter: brightness(100);
+@media (max-width: 375px) {
+  .title {
+    padding: 40px 24px 80px 24px;
+  }
+  .title .title_top {
+    max-width: 300px;
+    height: 192px;
+  }
+  .title .title_top .quote-left {
+    left: 35%;
+  }
+  .title .title_top h2 {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .title .title_top .quote-right {
+    display: none;
+  }
+  .title_bottom {
+    max-width: 235px;
+  }
+  .title_bottom ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container {
+    max-width: 351px;
+    margin-top: 60px;
+  }
+  .container .work .space {
+    margin-top: 20px;
+  }
+  .container .work .work-info h3 {
+    font-size: 20px;
+  }
+  .container .work .work-tags {
+    gap: 8px;
+  }
+  .container .paginator {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=Potfolio.css.map */

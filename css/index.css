@@ -52,26 +52,6 @@ table {
   border-spacing: 0;
 }
 
-* {
-  outline: 1px solid rgba(0, 0, 0, 0.062745098);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-}
-
-.wrap {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .header {
   max-width: 1296px;
   margin: 0 auto;
@@ -102,6 +82,22 @@ body {
 }
 .header .menu a:hover {
   font-weight: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .title {
