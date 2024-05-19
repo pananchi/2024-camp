@@ -126,7 +126,7 @@ body {
   text-align: center;
 }
 .title .title_top h2 .vector {
-  background-image: url("/images/mark.png");
+  background-image: url("../images/mark.png");
   background-repeat: no-repeat;
   background-position: bottom;
   padding-right: 20px;
@@ -236,7 +236,7 @@ body {
 }
 
 .footer {
-  background-image: url("/images/footer-bg-lg.png");
+  background-image: url("../images/footer-bg-lg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
