@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    border-bottom: 1px solid #F1F1F1;
     .logo{
         position: absolute;
         top: 25px;
@@ -12,7 +13,6 @@
             display: block;
         }
     }
-
     .menu{
         display: flex;
         align-items: center;
@@ -26,6 +26,35 @@
             padding: 4px 4px;
             &:hover{
                 font-weight: 900;
+            }
+        }
+    }
+    .burger{
+        display: none;
+    }
+}
+
+
+@media(max-width: 768px){
+    .header{
+        height: 56px;
+        padding: 8px 12px;
+        .logo{
+            left: 20px;
+            top: 15%;
+        }
+        .menu{
+            display: none;
+        }
+        .burger{
+            width: 40px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25%;
+            svg{
+                height: 100%;
             }
         }
     }
