@@ -286,6 +286,7 @@ body {
 .title .title_bottom ul {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 .title .title_bottom ul li {
   display: flex;
