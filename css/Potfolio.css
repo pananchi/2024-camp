@@ -71,7 +71,6 @@ table {
 .header .menu {
   display: flex;
   align-items: center;
-  max-width: 480px;
   margin: 32px 0px;
 }
 .header .menu a {
@@ -79,10 +78,47 @@ table {
   text-decoration: none;
   color: #000;
   margin: 0px 20px;
-  padding: 4px 4px;
+  padding: 4px 8px;
+  position: relative;
 }
 .header .menu a:hover {
   font-weight: 900;
+}
+.header .menu a:hover .vector1 {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+.header .menu a:hover .vector2 {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid #919191;
+  border-bottom: 1px solid #919191;
+}
+.header .menu a:hover .vector3 {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+.header .menu a:hover .vector4 {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 1px solid #919191;
+  border-top: 1px solid #919191;
 }
 .header .burger {
   display: none;
