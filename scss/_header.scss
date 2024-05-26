@@ -1,14 +1,16 @@
 .header{
-    max-width: 1296px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    position: relative;
     border-bottom: 1px solid #F1F1F1;
+    .heaber_bg{
+        max-width: 1290px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
     .logo{
         position: absolute;
         top: 25px;
-        left: 0%;
+        left: 0px;
         img{
             display: block;
         }
@@ -79,7 +81,7 @@
         padding: 8px 12px;
         .logo{
             left: 20px;
-            top: 15%;
+            top: 0px;
         }
         .menu{
             display: none;
@@ -89,8 +91,8 @@
             height: 30px;
             display: block;
             position: absolute;
-            right: 20px;
-            top: 25%;
+            right: 10px;
+            top: 5px;
             svg{
                 height: 100%;
             }

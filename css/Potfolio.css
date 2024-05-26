@@ -53,17 +53,19 @@ table {
 }
 
 .header {
-  max-width: 1296px;
+  border-bottom: 1px solid #F1F1F1;
+}
+.header .heaber_bg {
+  max-width: 1290px;
   margin: 0 auto;
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
-  border-bottom: 1px solid #F1F1F1;
 }
 .header .logo {
   position: absolute;
   top: 25px;
-  left: 0%;
+  left: 0px;
 }
 .header .logo img {
   display: block;
@@ -131,7 +133,7 @@ table {
   }
   .header .logo {
     left: 20px;
-    top: 15%;
+    top: 0px;
   }
   .header .menu {
     display: none;
@@ -141,8 +143,8 @@ table {
     height: 30px;
     display: block;
     position: absolute;
-    right: 20px;
-    top: 25%;
+    right: 10px;
+    top: 5px;
   }
   .header .burger svg {
     height: 100%;
@@ -153,7 +155,6 @@ table {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 424px;
 }
 .footer .footer_content {
   max-width: 1296px;
@@ -255,12 +256,11 @@ table {
 }
 
 body {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
 }
 
 .wrap {
-  max-width: 100%;
   margin: 0 auto;
 }
 
