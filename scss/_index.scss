@@ -1,6 +1,6 @@
-// *{
-//      outline: 1px solid #00000005;
-//  }
+*{
+     outline: 1px solid #00000005;
+ }
 
 .hero {
     max-width: 1920px;
@@ -11,17 +11,21 @@
         justify-content: right;
         align-items: center;
         gap: 24px;
-        h1{
+        h2{
             font-size: 40px;
             font-weight: 600;
             margin-bottom: 32px;
             color: #3B3B3B;
         }
-        h3{
-            font-size: 20px;
-            font-weight: 400;
-            color: #5B5B5B;
-            padding: 7px 0px;
+        .hero_text_1{
+            display: flex;
+            justify-content: left;
+            margin-bottom: 8px;
+            h3{
+                font-size: 20px;
+                font-weight: 400;
+                color: #5B5B5B;  
+            }
             .vector{
                 background: url("../images/mark.png");
                 width: 100%;
@@ -32,11 +36,22 @@
                 padding-left: 12px;
             }
         }
+        .hero_text_2{
+            display: flex;
+            justify-content: left;
+            margin-bottom: 16px;
+            h3{
+                font-size: 20px;
+                font-weight: 400;
+                color: #5B5B5B;  
+            }
+        }
+        
         p{
+            display: flex;
             font-size: 16px;
             font-weight: 400;
             color: #C1C1C1;
-            padding-top: 24px;
         }
         .hero_icon{
             display: flex;
@@ -47,12 +62,19 @@
                 display: block;
             }
         }
-        img{
-            display: block;
-            max-width: 1154px;
+        .hero-lg{
+            img{
+                display: block;
+                max-width: 1154px;
+            }
+        }
+        .hero-sm{
+            display: none;
+        }
     }
-    }
+        
 }
+
 
 .title_index{
     display: flex;
@@ -65,9 +87,13 @@
         color: #3B3B3B;
         padding: 0px 16px;
     }
-    img{
+    .title_lg{
+        display: block;
         width: 100px;
         height: 6px;
+    }
+    .title_sm{
+        display: none;
     }
 }
 
@@ -85,7 +111,6 @@
         background-image: url(../images/homepage-work1-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
         ul{
             display: flex;
             justify-content: center;
@@ -446,4 +471,85 @@
     }
 }
 
+@media(max-width: 992px){
+    .hero{
+        padding-left: 0px;
+        .hero_content{
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+            gap: 0px;
+            h2{
+                padding-top: 40px;
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .hero_text_1{
+                flex-direction: column;
+            }
+            .hero_text_2{
+                flex-direction: column;
+            }
+            p{
+                flex-direction: column;
+            }
+            .hero_icon{
+                justify-content: center;
+                gap: 16px;
+                padding-bottom: 40px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .title_index{
+        padding: 40px 0px ;
+        h2{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .title_lg{
+            display: none;
+        }
+        .title_sm{
+            display: block;
+            width: 56px;
+            height: 6px;
+        }
+    }
+    .work{
+        .work_1{
+            max-width: 100%;
+            height: 390px;
+            ul{
+                flex-direction: column;
+            }
+            .work_img{
+                padding-top: 93px;
+            }
+            img{
+                width: 295px;
+            }
+        }
+    }
 
+}
+   
+
+@media(max-width: 768px){
+    .hero{
+        .hero_content{
+            .hero-lg{
+                display: none;
+            }
+            .hero-sm{
+                display: block;
+                max-width: 375px;
+                height: 285px;
+            }
+        }
+    }
+        
+}
