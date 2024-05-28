@@ -1,22 +1,15 @@
-@import "cssreset";
-@import "header";
-@import "footer";
-@import "wrap";
 
 
 .title{
     margin: 0 auto;
     background: #FAFAFA;
     padding: 80px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     img{
         display: block;
     }
     .title_top{
         margin: 0 auto;
-        width: 670px;
+        width: 670px;       
         position: relative;
         .quote-left{
             position: absolute;
@@ -58,7 +51,7 @@
     .title_bottom{
         max-width: 636px;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 24px;
         ul{
             display: flex;
             justify-content: space-between;
@@ -87,10 +80,10 @@
     }
 }
 
-
 .container{
-    max-width: 1296px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 40px 5px;
     .work{
         display: flex;
         flex-wrap: wrap;
@@ -140,9 +133,9 @@
     .paginator{
         display: flex;
         justify-content: center;
-        margin-top: 80px;
+        margin-top: 75px;
         gap: 16px;
-        padding-bottom: 85px;
+        padding-bottom: 80px;
         a{
             display: block;
             font-size: 24px;
@@ -157,6 +150,17 @@
         }
     }
 }
+
+@media(max-width: 992px){
+    .title{
+        padding: 40px 0px 80px 0px ;
+
+            .quote-right{
+                display: none;
+            }
+    }
+}
+
 
 @media(max-width: 768px){
     .title{
@@ -177,27 +181,28 @@
                 width: 260px;
                 margin: 0 auto;
                 font-size: 20px;
-                padding: 10px 0px 0px 0px;
+                padding: 16px 0px 0px 0px;
             }
             .quote-right{
                 display: none;
             }
         }
-    }   
-    .title_bottom{
-        width: 235px;
-        ul{
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+        .title_bottom{
+            width: 235px;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
         }
-    }
+    }   
+
     .container{
         padding: 0px 12px 0px 12px;
-        margin-top: 60px;
+        margin-top: 56px;
         .work{
             .space{
-                margin-top: 30px;
+                margin-top: 24px;
             }
             .work-info{
                 h3{
@@ -205,7 +210,7 @@
                 }
             }
             .work-tags{
-                gap: 8px;
+                margin-top: 16px;
             }
         }
         .paginator{

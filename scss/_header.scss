@@ -10,7 +10,7 @@
     .logo{
         position: absolute;
         top: 25px;
-        left: 0px;
+        left: 5px;
         img{
             display: block;
         }
@@ -75,7 +75,7 @@
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 992px){
     .header{
         height: 56px;
         padding: 8px 12px;

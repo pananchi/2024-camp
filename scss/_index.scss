@@ -1,12 +1,30 @@
-@import "cssreset";
+@import "cssReset";
 @import "header";
 @import "footer";
 @import "wrap";
 
 
-*{
-     outline: 1px solid #00000005;
- }
+// *{
+//      outline: 1px solid #00000005;
+//  }
+
+ .title_index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+        color: #3B3B3B;
+        padding: 0px 16px;
+    }
+    img{
+        width: 100px;
+        height: 6px;
+    }
+}
+
 
 .hero {
     max-width: 1920px;
@@ -63,22 +81,6 @@
 .work{
     max-width: 100%;
     margin: 0 auto;
-    .title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 100px 0px;
-        h2{
-            font-size: 32px;
-            font-weight: 600;
-            color: #3B3B3B;
-            padding: 0px 16px;
-        }
-        img{
-            width: 100px;
-            height: 6px;
-        }
-    }
     .work_content{
         max-width: 100%;
         margin: 0 auto;
@@ -327,3 +329,7 @@
     }
 }
 
+.services{
+    max-width: 100%;
+    margin: 0 auto;
+}
