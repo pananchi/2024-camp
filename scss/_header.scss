@@ -1,20 +1,25 @@
 .header{
     border-bottom: 1px solid #F1F1F1;
     .heaber_bg{
-        max-width: 1290px;
+        max-width: 1296px;
         margin: 0 auto;
         position: relative;
         display: flex;
         justify-content: center;
-    }
-    .logo{
-        position: absolute;
-        top: 25px;
-        left: 5px;
-        img{
+        .logo{
             display: block;
+            background-image: url(../images/logo.svg);
+            width: 90px;
+            height: 40px;
+            text-indent: 101% ;
+            overflow: hidden;
+            white-space:nowrap;
+            position: absolute;
+            top: 25px;
+            left: 0px;  
         }
     }
+
     .menu{
         display: flex;
         align-items: center;
@@ -26,6 +31,50 @@
             margin: 0px 20px;
             padding: 4px 8px;
             position: relative;
+            .vector1{
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-top: 1px solid #919191;
+                border-right: 1px solid #919191;
+                opacity: 0;
+                transition: opacity .5s;
+            }
+            .vector2{
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-right: 1px solid #919191;
+                border-bottom: 1px solid #919191;
+                opacity: 0;
+                transition: opacity .5s;
+            }
+            .vector3{
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom: 1px solid #919191;
+                border-left: 1px solid #919191;
+                opacity: 0;
+                transition: opacity .5s;
+            }
+            .vector4{
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-left: 1px solid #919191;
+                border-top: 1px solid #919191;
+                opacity: 0;
+                transition: opacity .5s;
+            }
             &:hover{
                 font-weight: 900;
                 .vector1{
@@ -36,6 +85,8 @@
                     right: 0;
                     border-top: 1px solid #919191;
                     border-right: 1px solid #919191;
+                    opacity: 1;
+                    transition: opacity .5s;
                 }
                 .vector2{
                     width: 8px;
@@ -45,6 +96,8 @@
                     bottom: 0;
                     border-right: 1px solid #919191;
                     border-bottom: 1px solid #919191;
+                    opacity: 1;
+                    transition: opacity .5s;
                 }
                 .vector3{
                     width: 8px;
@@ -54,6 +107,8 @@
                     left: 0;
                     border-bottom: 1px solid #919191;
                     border-left: 1px solid #919191;
+                    opacity: 1;
+                    transition: opacity .5s;
                 }
                 .vector4{
                     width: 8px;
@@ -63,6 +118,8 @@
                     top: 0;
                     border-left: 1px solid #919191;
                     border-top: 1px solid #919191;
+                    opacity: 1;
+                    transition: opacity .5s;
                 }
             }
         }
@@ -79,12 +136,18 @@
     .header{
         height: 56px;
         padding: 8px 12px;
-        .logo{
-            left: 20px;
-            top: 0px;
-        }
-        .menu{
-            display: none;
+        .heaber_bg{
+            .logo{
+                left: 10px;
+                top: 0px;
+                img{
+                    width: 74px;
+                    height: 33px;
+                }
+            }
+            .menu{
+                display: none;
+            }
         }
         .burger{
             width: 40px;
