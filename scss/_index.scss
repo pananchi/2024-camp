@@ -1,6 +1,6 @@
-*{
-     outline: 1px solid #00000010;
- }
+// *{
+//      outline: 1px solid #00000010;
+//  }
 
 .hero{
     max-width: 1920px;
@@ -85,6 +85,9 @@
     .work_content{
         max-width: 100%;
         margin: 0 auto;
+    }
+    .work_content_sm{
+        display: none;
     }
     .work_1_lg{
         background-image: url(../images/homepage-work1-bg.png);
@@ -176,9 +179,7 @@
             margin-top: 40px;
         }
     }
-    .work_1_content_sm{
-        display: none;
-    }
+    
     .work_2_lg{
         max-width: 100%;
         background-image: url(../images/homepage-work2-lg.png);
@@ -259,9 +260,6 @@
             top: 0;
             z-index: 1;
         }
-    }
-    .work_2_content_sm{
-        display: none;
     }
     .work_3_lg{
         background-image: url(../images/homepage-work3-bg.png);
@@ -354,9 +352,6 @@
             margin-top: 40px;
         }
     }
-    .work_3_content_sm{
-        display: none;
-    }
 }
 
 .services{
@@ -370,6 +365,10 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 24px;
+        img{
+            width: 80px;
+            height: 80px;
+        }
         a{
             display: flex;
             flex-direction: column;
@@ -428,12 +427,13 @@
         gap: 24px;
         margin-bottom: 40px;
         li{
-            width: 416px;
+            max-width: 416px;
             
             img{
                 width: 100%;
                 display: block;
                 border-radius: 8px;
+                border: 1px solid #F1F1F1;
             }
         }
         a{
@@ -481,56 +481,34 @@
             }
         }
     }
+    .btn_sm{
+        display: none;
+    }
 }
 
 @media(max-width: 992px){
     .hero{
         padding-left: 0px;
-        .hero_content{
+        .hero_content_lg{
             flex-direction: column-reverse;
-            justify-content: center;
-            text-align: center;
-            gap: 0px;
-            h2{
-                padding-top: 40px;
-                font-size: 32px;
-                font-weight: 700;
-            }
-            .hero_text_1{
-                flex-direction: column;
-            }
-            .hero_text_2{
-                flex-direction: column;
-            }
-            p{
-                flex-direction: column;
-            }
-            .hero_icon{
-                justify-content: center;
-                gap: 16px;
-                padding-bottom: 40px;
-                img{
-                    width: 40px;
-                    height: 40px;
-                }
-            }
         }
     }
 } 
 
 @media(max-width: 768px){
     .hero{
+        max-width: 768px;
         .hero_content_lg{
             display: none;
         }
-        .hero_content_sm{
+    .hero_content_sm{
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
             text-align: center;
             img{
                 display: block;
-                width: 768px;
+                max-width: 100%;
             }
             h2{
                 font-size: 32px;
@@ -576,8 +554,10 @@
                 }
             }
 
-        }
-    }  
+        
+        }  
+    }
+
     .title_index{
         padding: 40px 0px ;
         h2{
@@ -700,4 +680,68 @@
         }
 
     }
+    .services{
+        background-image: none;
+        background: #FAFAFA;
+        padding-top: 40px;
+        .services_content{
+            a{
+                font-size: 24px;
+            }
+        }
+        .services_btn{
+            margin-top: 40px;
+            padding-bottom: 80px;
+            p{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 24px;
+            }
+            a{
+                width: 208px;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 8px 16px;
+                
+            }
+        }
+    }
+    .articles{
+        margin: 0 auto;
+        padding: 80px 12px 80px 12px;
+        .articles_content{
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            h3{
+                font-weight: 600;
+            }
+        }
+        .elliose{
+            display: none;
+        }
+        .btn_sm{
+            img{
+                display: block;
+                width: 24px;
+                height: 24px;
+            }
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            padding: 8px 0px;
+
+            width: 128px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 5px;
+            text-decoration: none;
+            gap: 8px;
+            margin-top: 40px;
+        }
+    }
+        
 }
